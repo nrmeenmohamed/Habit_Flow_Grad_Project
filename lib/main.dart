@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:habitflow/core/managers/theme_manager.dart';
 import 'package:habitflow/test.dart';
 
@@ -11,10 +12,15 @@ class HabitFlow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: themeApp,
-      home: Test(),
+    return ScreenUtilInit(
+      designSize: const Size(375, 812),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: themeApp,
+        home: Test(),
+      ),
     );
   }
 }
