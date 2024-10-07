@@ -7,4 +7,5 @@ class AssetsManager {
   static const String planing = 'assets/images/planing.png';
   static const String socialMedia = 'assets/images/social_media.png';
   static const String workout = 'assets/images/workout.png';
+  static const String allSet = 'assets/images/all_set.png';
 }
