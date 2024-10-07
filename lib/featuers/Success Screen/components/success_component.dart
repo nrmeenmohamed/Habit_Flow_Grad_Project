@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../core/managers/asset_manager.dart';
-import '../../core/managers/color_manager.dart';
-import '../../core/managers/style_manager.dart';
+
+import '../../../core/managers/asset_manager.dart';
+import '../../../core/managers/color_manager.dart';
+import '../../../core/managers/style_manager.dart';
 
 class CustomSuccessComponent extends StatelessWidget {
   const CustomSuccessComponent({super.key});
@@ -15,7 +16,9 @@ class CustomSuccessComponent extends StatelessWidget {
         children: [
           const Image(image: AssetImage(AssetsManager.allSet)),
           Text(
-            'You are all set ',style: StyleManager.largeTitleText(color: ColorManager.primaryColor),
+            'You are all set ',
+            style:
+                StyleManager.largeTitleText(color: ColorManager.primaryColor),
           )
         ],
       ),
