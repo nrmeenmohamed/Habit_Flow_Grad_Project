@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:habitflow/core/managers/color_manager.dart';
 
-import '../managers/style_manager.dart';
+import '../../managers/style_manager.dart';
 
 class CustomTitle extends StatelessWidget {
   final String month;
