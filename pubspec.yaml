@@ -50,6 +50,8 @@ dependencies:
   carousel_slider: ^5.0.0
   table_calendar: ^3.1.2
   fl_chart: ^0.69.0
+  date_picker_timeline: ^1.2.1
+  day_picker: 2.3.0
 
 dev_dependencies:
   flutter_test:

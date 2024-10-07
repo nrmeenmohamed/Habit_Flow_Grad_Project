@@ -113,6 +113,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
+  date_picker_timeline:
+    dependency: "direct main"
+    description:
+      name: date_picker_timeline
+      sha256: c05e6540fa3055c9036e6f99e758972e14be0e1010d5a6e7a1261d4a6f3292df
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.6"
+  day_picker:
+    dependency: "direct main"
+    description:
+      name: day_picker
+      sha256: "0f7b7e0078f8c7882d009bebabf3b9825acfe5ac0dbcc6ad0fd520bef3fc1047"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.0"
   dio:
     dependency: "direct main"
     description:
