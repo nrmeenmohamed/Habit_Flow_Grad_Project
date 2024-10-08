@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:habitflow/core/managers/color_manager.dart';
-import '../../core/managers/style_manager.dart';
 
-const List<String> list = <String>['option 1', 'option 2', 'option 3', 'option 4'];
+import '../../../core/managers/style_manager.dart';
+
+const List<String> list = <String>[
+  'option 1',
+  'option 2',
+  'option 3',
+  'option 4'
+];
 
 class CustomDropdownMenu extends StatefulWidget {
   const CustomDropdownMenu({super.key});
@@ -18,7 +24,9 @@ class _CustomDropdownMenu extends State<CustomDropdownMenu> {
   Widget build(BuildContext context) {
     return DropdownMenu<String>(
       width: 200.w,
-      menuStyle: const MenuStyle(backgroundColor:  MaterialStatePropertyAll<Color>(ColorManager.secondaryColor)),
+      menuStyle: const MenuStyle(
+          backgroundColor:
+              MaterialStatePropertyAll<Color>(ColorManager.secondaryColor)),
       textStyle: StyleManager.mediumText(color: Colors.white),
       initialSelection: list.first,
       onSelected: (String? value) {
@@ -27,7 +35,12 @@ class _CustomDropdownMenu extends State<CustomDropdownMenu> {
         });
       },
       dropdownMenuEntries: list.map<DropdownMenuEntry<String>>((String value) {
-        return DropdownMenuEntry<String>(value: value, label: value,style: const ButtonStyle(foregroundColor: MaterialStatePropertyAll<Color>(Colors.white)));
+        return DropdownMenuEntry<String>(
+            value: value,
+            label: value,
+            style: const ButtonStyle(
+                foregroundColor:
+                    MaterialStatePropertyAll<Color>(Colors.white)));
       }).toList(),
     );
   }
