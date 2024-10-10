@@ -44,7 +44,7 @@ class _HomeHabitContainerState extends State<HomeHabitContainer> {
                 },
                 materialTapTargetSize: MaterialTapTargetSize.padded,
                 activeColor: ColorManager.accentColor,
-                side: BorderSide(color: ColorManager.primaryColor),
+                side: const BorderSide(color: ColorManager.primaryColor),
               ),
             ),
           ],

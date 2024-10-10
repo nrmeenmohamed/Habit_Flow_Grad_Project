@@ -48,7 +48,7 @@ class TimeContainer extends StatelessWidget {
   final bool isSelected;
   final VoidCallback onTap;
 
-  TimeContainer({
+  const TimeContainer({super.key, 
     required this.time,
     required this.isSelected,
     required this.onTap,

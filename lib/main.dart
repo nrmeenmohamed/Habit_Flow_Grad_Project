@@ -19,7 +19,7 @@ class HabitFlow extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: themeApp,
-        home: Test(),
+        home: const Test(),
       ),
     );
   }

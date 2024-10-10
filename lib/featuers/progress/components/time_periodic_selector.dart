@@ -26,7 +26,7 @@ class _CustomDropdownMenu extends State<CustomDropdownMenu> {
       width: 200.w,
       menuStyle: const MenuStyle(
           backgroundColor:
-              MaterialStatePropertyAll<Color>(ColorManager.secondaryColor)),
+              WidgetStatePropertyAll<Color>(ColorManager.secondaryColor)),
       textStyle: StyleManager.mediumText(color: Colors.white),
       initialSelection: list.first,
       onSelected: (String? value) {
@@ -40,7 +40,7 @@ class _CustomDropdownMenu extends State<CustomDropdownMenu> {
             label: value,
             style: const ButtonStyle(
                 foregroundColor:
-                    MaterialStatePropertyAll<Color>(Colors.white)));
+                    WidgetStatePropertyAll<Color>(Colors.white)));
       }).toList(),
     );
   }
