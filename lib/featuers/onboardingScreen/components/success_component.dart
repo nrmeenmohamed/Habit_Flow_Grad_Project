@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:habitflow/core/managers/color_manager.dart';
 
 import '../../../core/managers/asset_manager.dart';
-import '../../../core/managers/color_manager.dart';
 import '../../../core/managers/style_manager.dart';
 
 class CustomSuccessComponent extends StatelessWidget {
