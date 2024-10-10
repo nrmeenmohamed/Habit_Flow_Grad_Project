@@ -5,11 +5,7 @@ class Test extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: const Column(
-        children: [],
-      ),
-    );
+    return const Placeholder();
+    //return HabitDetailScreen();
   }
 }

@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../core/managers/color_manager.dart';
 
 class CustomCloseIcon extends StatefulWidget {
   const CustomCloseIcon({super.key});
@@ -13,13 +10,14 @@ class _CustomCloseIconState extends State<CustomCloseIcon> {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-        iconSize: 40.w,
         onPressed: () {
+          Navigator.pop(context);
           /* write the closing function code here */
         },
         icon: const Icon(
+          weight: 50.0,
           Icons.close,
-          color: ColorManager.primaryColor,
+          //color: ColorManager.backgroundColor,
         ));
   }
 }
