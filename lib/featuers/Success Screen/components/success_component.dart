@@ -9,7 +9,7 @@ class CustomSuccessComponent extends StatelessWidget {
   const CustomSuccessComponent({super.key});
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 200.w,
       height: 200.w,
       child: Column(

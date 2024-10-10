@@ -53,6 +53,7 @@ dependencies:
   date_picker_timeline: ^1.2.1
   day_picker: 2.3.0
 
+  intl: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
