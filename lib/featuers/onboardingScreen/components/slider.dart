@@ -15,6 +15,7 @@ class CustomSlider extends StatelessWidget {
       lineHeight: 8.h,
       percent: progressPercent,
       progressColor: ColorManager.primaryColor,
+      barRadius: Radius.circular(10.0.r),
     );
   }
 }
