@@ -3,12 +3,16 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:habitflow/core/managers/color_manager.dart';
 import 'package:habitflow/core/managers/style_manager.dart';
 class HomeHabitContainer extends StatefulWidget {
-  const HomeHabitContainer({super.key});
+  late String habitName;
+
+   HomeHabitContainer({super.key,required this.habitName});
   @override
   State<HomeHabitContainer> createState() => _HomeHabitContainerState();
 }
 class _HomeHabitContainerState extends State<HomeHabitContainer> {
   bool isChecked = false;
+
+  bool Completed=false;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -24,7 +28,7 @@ class _HomeHabitContainerState extends State<HomeHabitContainer> {
               ),
 
               child: Text(
-                'Read 10 pages of a book',
+                widget.habitName,
                 style: StyleManager.smallTitleText(color: ColorManager.primaryColor),
               ),
             ),
@@ -39,6 +43,7 @@ class _HomeHabitContainerState extends State<HomeHabitContainer> {
                 value: isChecked,
                 onChanged: (bool? value) {
                   setState(() {
+                    Completed=value!;
                     isChecked = value!;
                   });
                 },
@@ -62,6 +67,7 @@ class _HomeHabitContainerState extends State<HomeHabitContainer> {
               borderRadius: BorderRadius.circular(10),
             ),
             child: Text(
+              Completed ?" Completed at 7.20pm" :
               'Usually completed at 10.15PM',
               style: TextStyle(
                 color: isChecked ? ColorManager.backgroundColor : ColorManager.secondaryColor,

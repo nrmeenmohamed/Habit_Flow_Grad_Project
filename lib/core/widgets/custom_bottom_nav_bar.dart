@@ -1,35 +1,57 @@
 import 'package:flutter/material.dart';
+import 'package:habitflow/featuers/newHabit/screens/new_habit_screen.dart';
 
 import '../managers/color_manager.dart';
 
-class BottomNavigation extends StatelessWidget {
-  const BottomNavigation({super.key});
+class BottomNavigation extends StatefulWidget {
+   BottomNavigation({super.key});
+
+  @override
+  State<BottomNavigation> createState() => _BottomNavigationState();
+}
+
+class _BottomNavigationState extends State<BottomNavigation> {
+  int CurrentIndex=0;
 
   @override
   Widget build(BuildContext context) {
-    return BottomAppBar(
-      color: ColorManager.accentColor,
-      shape: const CircularNotchedRectangle(),
-      notchMargin: 8.0,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            IconButton(
-              icon: const Icon(Icons.home),
-              onPressed: () {},
-              color: ColorManager.secondaryColor,
-            ),
-            const FloatingAddButton(),
-            IconButton(
-              icon: const Icon(Icons.bar_chart),
-              onPressed: () {},
-              color: ColorManager.secondaryColor,
-            ),
-          ],
+
+    return BottomNavigationBar(
+      currentIndex: CurrentIndex,
+      items: [
+
+        BottomNavigationBarItem(
+
+          icon: const Icon(Icons.home),
+          label: "Home Screen",
+
+          backgroundColor: ColorManager.secondaryColor,
         ),
-      ),
+        BottomNavigationBarItem(
+
+          icon: FloatingActionButton(onPressed: (){
+            Navigator.pushNamed(context, "newHabitScreen");
+          },
+            child: Icon(Icons.add,color: Colors.white,),
+            backgroundColor: ColorManager.secondaryColor,
+
+
+          ),
+          label: ""
+
+        ),
+
+        BottomNavigationBarItem(
+          icon: const Icon(Icons.bar_chart),
+          label: "Chart",
+          backgroundColor: ColorManager.secondaryColor,
+        ),
+      ],
+      onTap: (value){
+        setState(() {
+          CurrentIndex=value;
+        });
+      },
     );
   }
 }

@@ -25,7 +25,7 @@ class CustomPrimaryElevatedBtn extends StatelessWidget {
         overlayColor:
             const WidgetStatePropertyAll<Color>(ColorManager.secondaryColor),
         minimumSize:
-            WidgetStatePropertyAll<Size>(Size(btnWidth, SizeManager.s64.sp)),
+            WidgetStatePropertyAll<Size>(Size(btnWidth, SizeManager.s48.sp)),
         shape: WidgetStatePropertyAll<OutlinedBorder>(RoundedRectangleBorder(
             borderRadius:
                 BorderRadius.all(Radius.circular(SizeManager.s32.sp)))),
