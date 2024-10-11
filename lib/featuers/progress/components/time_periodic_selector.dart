@@ -22,28 +22,31 @@ class _CustomDropdownMenu extends State<CustomDropdownMenu> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      body: DropdownMenu<String>(
-        width: 200.w,
-        menuStyle: const MenuStyle(
-            backgroundColor:
-                MaterialStatePropertyAll<Color>(ColorManager.secondaryColor)),
-        textStyle: StyleManager.mediumText(color: Colors.white),
-        initialSelection: list.first,
-        onSelected: (String? value) {
-          setState(() {
-            dropdownValue = value!;
-          });
-        },
-        dropdownMenuEntries: list.map<DropdownMenuEntry<String>>((String value) {
-          return DropdownMenuEntry<String>(
-              value: value,
-              label: value,
-              style: const ButtonStyle(
-                  foregroundColor:
-                      MaterialStatePropertyAll<Color>(Colors.white)));
-        }).toList(),
-      ),
+      body:
+
+     DropdownMenu<String>(
+      width: 200.w,
+      menuStyle: const MenuStyle(
+          backgroundColor:
+              WidgetStatePropertyAll<Color>(ColorManager.secondaryColor)),
+      textStyle: StyleManager.mediumText(color: Colors.white),
+      initialSelection: list.first,
+      onSelected: (String? value) {
+        setState(() {
+          dropdownValue = value!;
+        });
+      },
+      dropdownMenuEntries: list.map<DropdownMenuEntry<String>>((String value) {
+        return DropdownMenuEntry<String>(
+            value: value,
+            label: value,
+            style: const ButtonStyle(
+                foregroundColor:
+                    WidgetStatePropertyAll<Color>(Colors.white)));
+      }).toList(),
+     )
     );
   }
 }

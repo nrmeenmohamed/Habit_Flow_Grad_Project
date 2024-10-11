@@ -1,5 +1,4 @@
 import 'package:day_picker/day_picker.dart';
-import 'package:day_picker/model/day_in_week.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:habitflow/core/managers/color_manager.dart';

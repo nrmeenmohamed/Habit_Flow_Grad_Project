@@ -44,12 +44,12 @@ class _HomeHabitContainerState extends State<HomeHabitContainer> {
                 onChanged: (bool? value) {
                   setState(() {
                     Completed=value!;
-                    isChecked = value!;
+                    isChecked = value;
                   });
                 },
                 materialTapTargetSize: MaterialTapTargetSize.padded,
                 activeColor: ColorManager.accentColor,
-                side: BorderSide(color: ColorManager.primaryColor),
+                side: const BorderSide(color: ColorManager.primaryColor),
               ),
             ),
           ],
