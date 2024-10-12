@@ -8,8 +8,17 @@ class CompletedHabitsChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       height: 250,
+      padding: const EdgeInsets.all(16), // أضفنا بعض الـ padding حول الرسم البياني
+      decoration: BoxDecoration(
+        color: ColorManager.secondaryColor, // خلفية الحاوية
+        borderRadius: BorderRadius.circular(16), // حواف دائرية
+        border: Border.all( // إضافة حدود بلون معين وسُمك
+          color: Colors.black,
+          width: 2,
+        ),
+      ),
       child: BarChart(
         BarChartData(
           alignment: BarChartAlignment.spaceAround,
