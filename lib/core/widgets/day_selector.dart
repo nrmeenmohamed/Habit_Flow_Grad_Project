@@ -17,9 +17,7 @@ class _CustomDaySelectorState extends State<CustomDaySelector> {
     return Container(
       decoration: BoxDecoration(
         color: ColorManager.backgroundColor,
-        borderRadius: BorderRadius.all(
-            Radius.circular(10.r)
-        ),
+        borderRadius: BorderRadius.all(Radius.circular(10.r)),
       ),
       padding: const EdgeInsets.only(bottom: 4),
       child: DatePicker(
@@ -30,13 +28,18 @@ class _CustomDaySelectorState extends State<CustomDaySelector> {
         initialSelectedDate: DateTime.now(),
         selectionColor: ColorManager.secondaryColor,
         selectedTextColor: Colors.white,
-        dateTextStyle: StyleManager.mediumText(fontSize: 20.0,fontWeight: FontWeight.w600,color: ColorManager.primaryColor),
-        dayTextStyle:  StyleManager.mediumText(fontSize: 10.0,color: ColorManager.primaryColor),
-        monthTextStyle: StyleManager.mediumText(fontSize: 10.0,color: ColorManager.primaryColor),
-           onDateChange: (date) {
+        dateTextStyle: StyleManager.mediumText(
+            fontSize: 20.0,
+            fontWeight: FontWeight.w600,
+            color: ColorManager.primaryColor),
+        dayTextStyle: StyleManager.mediumText(
+            fontSize: 10.0, color: ColorManager.primaryColor),
+        monthTextStyle: StyleManager.mediumText(
+            fontSize: 10.0, color: ColorManager.primaryColor),
+        onDateChange: (date) {
           setState(
-                () {
-         print('$date');
+            () {
+              print('$date');
             },
           );
         },
