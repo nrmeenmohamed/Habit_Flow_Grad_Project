@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:habitflow/core/managers/size_manager.dart';
+import 'package:habitflow/core/managers/style_manager.dart';
 import 'package:intl/intl.dart';
 
 import '../managers/color_manager.dart';
@@ -11,42 +14,34 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     DateTime now = DateTime.now();
     String today = DateFormat('EEEE').format(now);
     String fullDate = DateFormat('d MMMM').format(now);
+
     return AppBar(
-      backgroundColor: ColorManager.accentColor,
+      leadingWidth: MediaQuery.of(context).size.width / 4,
+      titleSpacing: 20.0,
+      centerTitle: true,
       leading: Padding(
-        padding: const EdgeInsets.only(left: 16.0),
+        padding: const EdgeInsets.only(left: 20),
         child: Center(
           child: Text(
             today,
-            style: const TextStyle(
+            style: StyleManager.smallTitleText(
               color: ColorManager.primaryColor,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
+              fontSize: SizeManager.s24.sp,
             ),
           ),
         ),
       ),
-      title: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0),
-        child: Text(
-          fullDate,
-          style: const TextStyle(
+      title: Text(fullDate,
+          style: StyleManager.smallTitleText(
             color: ColorManager.primaryColor,
-            fontSize: 18,
-          ),
-        ),
-      ),
-      centerTitle: true,
-      actions: [
+          )),
+      actions: const [
         Padding(
-          padding: const EdgeInsets.only(right: 16.0),
-          child: IconButton(
-            icon: const Icon(
-              Icons.account_circle,
-              color: ColorManager.secondaryColor,
-              size: 30,
-            ),
-            onPressed: () {},
+          padding: EdgeInsets.only(right: 20),
+          child: Icon(
+            Icons.account_circle,
+            color: ColorManager.primaryColor,
+            size: 35,
           ),
         ),
       ],
