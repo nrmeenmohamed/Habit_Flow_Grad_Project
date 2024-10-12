@@ -22,7 +22,11 @@ class _CustomDropdownMenu extends State<CustomDropdownMenu> {
 
   @override
   Widget build(BuildContext context) {
-    return DropdownMenu<String>(
+
+    return Scaffold(
+      body:
+
+     DropdownMenu<String>(
       width: 200.w,
       menuStyle: const MenuStyle(
           backgroundColor:
@@ -42,6 +46,7 @@ class _CustomDropdownMenu extends State<CustomDropdownMenu> {
                 foregroundColor:
                     WidgetStatePropertyAll<Color>(Colors.white)));
       }).toList(),
+     )
     );
   }
 }

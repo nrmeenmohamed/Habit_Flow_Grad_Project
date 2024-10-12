@@ -56,8 +56,8 @@ class TimeContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Color primaryColor = ColorManager.primaryColor;
-    Color borderColor = isSelected ? primaryColor : ColorManager.backgroundColor;
+
+    Color borderColor = isSelected ? ColorManager.primaryColor : ColorManager.backgroundColor;
 
     return GestureDetector(
       onTap: onTap,
