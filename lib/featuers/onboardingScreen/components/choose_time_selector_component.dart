@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:habitflow/core/managers/style_manager.dart';
 
 import '../../../core/managers/color_manager.dart';
 
 class ChooseTimeSelector extends StatefulWidget {
-  const ChooseTimeSelector({super.key});
+  final Map<String, String> timeDate;
+  const ChooseTimeSelector({super.key, required this.timeDate});
 
   @override
   _ChooseTimeSelectorState createState() => _ChooseTimeSelectorState();
@@ -21,20 +24,26 @@ class _ChooseTimeSelectorState extends State<ChooseTimeSelector> {
         });
       },
       child: Container(
-        padding: const EdgeInsets.all(45),
+        width: MediaQuery.of(context).size.width / 2,
+        height: MediaQuery.of(context).size.height / 5,
         decoration: BoxDecoration(
-          color: ColorManager.accentColor,
-          borderRadius: BorderRadius.circular(12),
+          color: _isSelected
+              ? ColorManager.backgroundColor
+              : ColorManager.accentColor,
+          borderRadius: BorderRadius.circular(30.r),
           border: Border.all(
-            color: _isSelected ? ColorManager.primaryColor : Colors.transparent,
+            color: _isSelected
+                ? ColorManager.accentColor
+                : ColorManager.backgroundColor,
             width: 2,
           ),
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '12:00',
+              widget.timeDate['time']!,
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -42,17 +51,17 @@ class _ChooseTimeSelectorState extends State<ChooseTimeSelector> {
               ),
             ),
             Text(
-              'AM',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+              widget.timeDate['period']!,
+              style: StyleManager.largeTitleText(
                 color: _isSelected ? ColorManager.secondaryColor : Colors.white,
               ),
             ),
-            const Text(
-              'Morning',
-              style: TextStyle(
-                fontSize: 16,
+            SizedBox(
+              height: 5.h,
+            ),
+            Text(
+              widget.timeDate['label']!,
+              style: StyleManager.descriptionText(
                 color: ColorManager.secondaryColor,
               ),
             ),

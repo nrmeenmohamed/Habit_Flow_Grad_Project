@@ -11,10 +11,11 @@ class CustomSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LinearPercentIndicator(
-      width: 370.w,
+      //width: 370.w,
       lineHeight: 8.h,
       percent: progressPercent,
       progressColor: ColorManager.primaryColor,
+      barRadius: Radius.circular(10.0.r),
     );
   }
 }

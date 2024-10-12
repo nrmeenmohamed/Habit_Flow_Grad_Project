@@ -71,7 +71,7 @@ class ProgressTop3Habits extends StatelessWidget {
                   ),
                   SizedBox(height: 3.h),
                   const Text(
-                    'Journalling',
+                    'Journaling',
                     style: TextStyle(
                         color: ColorManager.backgroundColor,
                         fontWeight: FontWeight.bold),
