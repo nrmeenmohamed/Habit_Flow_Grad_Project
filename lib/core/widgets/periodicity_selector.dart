@@ -1,4 +1,5 @@
 import 'package:day_picker/day_picker.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:habitflow/core/managers/color_manager.dart';
@@ -40,7 +41,9 @@ class _CustomPeriodicitySelector extends State<CustomPeriodicitySelector> {
             borderRadius: BorderRadius.circular(30.0),
           ),
           onSelect: (values) {
-            print(values);
+            if (kDebugMode) {
+              print(values);
+            }
           },
         ),
       ),

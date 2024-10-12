@@ -1,0 +1,114 @@
+[33mcommit 916c74542cc5f69192fa5825dac5fec3ca3f92f1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: c7de3a0 5033b27
+Author: Nrmeen Mohamed <128254998+nrmeenmohamed@users.noreply.github.com>
+Date:   Thu Oct 10 16:49:07 2024 +0300
+
+    Merge pull request #4 from nrmeenmohamed/nrmeen
+    
+    Nrmeen
+
+[33mcommit 5033b278b25b66f0170ff5b0f7d4b6938e2a41cc[m
+Author: nrmeenmohamed <nrmeenelaraby@gmail.com>
+Date:   Thu Oct 10 16:47:09 2024 +0300
+
+    update slider
+
+[33mcommit 6ce11f80481f85ed07edc348a526e7d3e4028d41[m
+Merge: ad52c2e c7de3a0
+Author: nrmeenmohamed <nrmeenelaraby@gmail.com>
+Date:   Thu Oct 10 16:28:38 2024 +0300
+
+    Merge branch 'master' of https://github.com/nrmeenmohamed/Habit_Flow_Grad_Project into nrmeen
+
+[33mcommit ad52c2e0fda8f450db46aea3332a59371e99780b[m
+Author: nrmeenmohamed <nrmeenelaraby@gmail.com>
+Date:   Thu Oct 10 16:28:28 2024 +0300
+
+    first commit
+
+[33mcommit c7de3a0c828856a581d5518751b6d1ea6d785132[m
+Author: nrmeenmohamed <nrmeenelaraby@gmail.com>
+Date:   Thu Oct 10 16:21:57 2024 +0300
+
+    add screens folder
+
+[33mcommit 4aa6aba4a525d435eb1858edd7fa671f14227b80[m
+Author: nrmeenmohamed <nrmeenelaraby@gmail.com>
+Date:   Tue Oct 8 22:33:48 2024 +0300
+
+    add all ui component team
+
+[33mcommit f98ed52ac57397e9db0b84e2aabf5d44543914d0[m
+Merge: c283809 dced65b
+Author: Nrmeen Mohamed <128254998+nrmeenmohamed@users.noreply.github.com>
+Date:   Tue Oct 8 22:29:29 2024 +0300
+
+    Merge pull request #3 from nrmeenmohamed/nadine
+    
+    nadine
+
+[33mcommit c28380969885e2a061b5654fa5dfcb6d20330e38[m
+Author: nrmeenmohamed <nrmeenelaraby@gmail.com>
+Date:   Mon Oct 7 23:57:02 2024 +0300
+
+    update ui components team
+
+[33mcommit 52fb44a05e0beeee7492242eea84bd5c05a0a0cc[m
+Merge: a616d7c 1687feb
+Author: Nrmeen Mohamed <128254998+nrmeenmohamed@users.noreply.github.com>
+Date:   Mon Oct 7 23:30:31 2024 +0300
+
+    Merge pull request #2 from nrmeenmohamed/mariam
+    
+    finish ui by mariam
+
+[33mcommit 1687feb73160c733229752a88926d77b505e8dbf[m[33m ([m[1;31morigin/mariam[m[33m)[m
+Author: Mariam <marioomalsaidi44@gmail.com>
+Date:   Mon Oct 7 23:04:30 2024 -0700
+
+    finish ui by mariam
+
+[33mcommit dced65b3151d7b8c16d0a93c670e5faa9c20277c[m[33m ([m[1;31morigin/nadine[m[33m)[m
+Author: xx251202 <m7md2512@gmail.com>
+Date:   Mon Oct 7 17:43:18 2024 +0300
+
+    nadine
+
+[33mcommit a616d7ce0fc8eec3d0fcd6ad94fd7e8919191c11[m
+Merge: dcec987 805b990
+Author: Nrmeen Mohamed <128254998+nrmeenmohamed@users.noreply.github.com>
+Date:   Mon Oct 7 15:53:43 2024 +0300
+
+    Merge pull request #1 from nrmeenmohamed/mohamed
+    
+    merge your code
+
+[33mcommit 805b9900f32b29844fe13b0b20b39a46fc8f07d8[m[33m ([m[1;31morigin/mohamed[m[33m)[m
+Author: xx251202 <m7md2512@gmail.com>
+Date:   Mon Oct 7 15:41:10 2024 +0300
+
+    last edit (mohamed)
+
+[33mcommit f77bc78ee195bd31843ff8f7365ffa8029921f9c[m
+Author: xx251202 <m7md2512@gmail.com>
+Date:   Mon Oct 7 15:36:42 2024 +0300
+
+    m
+
+[33mcommit dcec9872791bba61ea7209092e76959a5efdd11e[m[33m ([m[1;31morigin/khloud[m[33m, [m[1;31morigin/ahmed[m[33m)[m
+Author: nrmeenmohamed <nrmeenelaraby@gmail.com>
+Date:   Thu Oct 3 18:47:03 2024 +0300
+
+    add custom_secondary_elevated_btn
+
+[33mcommit 3680c45f8304a4b5af063c0150bf7699a0699087[m
+Author: nrmeenmohamed <nrmeenelaraby@gmail.com>
+Date:   Thu Oct 3 18:09:53 2024 +0300
+
+    add colors, images
+
+[33mcommit eab94c76a8c3f31d10a21913978c2012f3d5cce2[m
+Author: nrmeenmohamed <nrmeenelaraby@gmail.com>
+Date:   Thu Oct 3 14:12:24 2024 +0300
+
+    add all packages
