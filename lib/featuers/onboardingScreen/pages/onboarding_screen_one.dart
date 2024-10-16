@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../core/widgets/custom_bottom_nav_bar.dart';
 import '../../../core/widgets/custom_primary_elevated_btn.dart';
 import '../../../core/widgets/custom_secondary_elevated_btn.dart';
 import '../components/TextField.dart';

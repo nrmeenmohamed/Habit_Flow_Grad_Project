@@ -7,7 +7,7 @@ import '../data/habit_model.dart';
 
 class ChooseHabitContainer extends StatefulWidget {
   final HabitModel habitModel;
-  ChooseHabitContainer({super.key, required this.habitModel});
+  const ChooseHabitContainer({super.key, required this.habitModel});
 
   @override
   State<ChooseHabitContainer> createState() => _ChooseHabitContainerState();

@@ -10,7 +10,7 @@ class SuccessWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
 
         CustomSlider(progressPercent: 1.0),

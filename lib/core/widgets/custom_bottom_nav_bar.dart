@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../managers/color_manager.dart';
 
 class BottomNavigation extends StatefulWidget {
-   BottomNavigation({super.key});
+   const BottomNavigation({super.key});
 
   @override
   State<BottomNavigation> createState() => _BottomNavigationState();
@@ -19,9 +19,9 @@ class _BottomNavigationState extends State<BottomNavigation> {
       currentIndex: CurrentIndex,
       items: [
 
-        BottomNavigationBarItem(
+        const BottomNavigationBarItem(
 
-          icon: const Icon(Icons.home),
+          icon: Icon(Icons.home),
           label: "Home Screen",
 
           backgroundColor: ColorManager.secondaryColor,
@@ -31,8 +31,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
           icon: FloatingActionButton(onPressed: (){
             Navigator.pushNamed(context, "newHabitScreen");
           },
-            child: Icon(Icons.add,color: Colors.white,),
             backgroundColor: ColorManager.secondaryColor,
+            child: const Icon(Icons.add,color: Colors.white,),
 
 
           ),
@@ -40,8 +40,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
 
         ),
 
-        BottomNavigationBarItem(
-          icon: const Icon(Icons.bar_chart),
+        const BottomNavigationBarItem(
+          icon: Icon(Icons.bar_chart),
           label: "Chart",
           backgroundColor: ColorManager.secondaryColor,
         ),

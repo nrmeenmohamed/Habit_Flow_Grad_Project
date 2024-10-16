@@ -40,7 +40,7 @@ class _StatisticsState extends State<Statistics> {
           ],
         ),
       ),
-      bottomNavigationBar:  BottomNavigation(),
+      bottomNavigationBar:  const BottomNavigation(),
     );
   }
 }

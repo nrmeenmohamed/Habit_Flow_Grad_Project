@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:habitflow/core/widgets/custom_arrow_back.dart';
 
@@ -14,8 +13,8 @@ class NewHabitScreen extends StatelessWidget {
     var habitNameController=TextEditingController();
     return Scaffold(
       appBar: AppBar(
-        leading: CustomArrowBack(),
-        title: Text("Add new habit"),
+        leading: const CustomArrowBack(),
+        title: const Text("Add new habit"),
         centerTitle: true,
       ),
       body: Padding(

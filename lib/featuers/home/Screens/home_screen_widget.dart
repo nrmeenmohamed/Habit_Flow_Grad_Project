@@ -14,8 +14,8 @@ class HomeScreenWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CustomDaySelector(),
-        Text("My Habits",style: TextStyle(
+        const CustomDaySelector(),
+        const Text("My Habits",style: TextStyle(
             fontWeight: FontWeight.bold,
             color: ColorManager.secondaryColor,
             fontSize: 30

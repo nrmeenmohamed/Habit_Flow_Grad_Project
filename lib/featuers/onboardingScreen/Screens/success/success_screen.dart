@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:habitflow/core/widgets/custom_arrow_back.dart';
 import 'package:habitflow/featuers/onboardingScreen/Screens/success/success_widget.dart';
@@ -12,9 +11,9 @@ class SuccessScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
-        leading: CustomArrowBack(),
+        leading: const CustomArrowBack(),
       ),
-      body: SuccessWidget(),
+      body: const SuccessWidget(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: CustomPrimaryElevatedBtn(onPressed: () {
         Navigator.pushNamed(context, "homeScreen");
