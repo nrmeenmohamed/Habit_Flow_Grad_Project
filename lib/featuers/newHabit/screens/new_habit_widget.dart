@@ -18,23 +18,23 @@ class NewHabitWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start
       ,
       children: [
-        SizedBox(height: 40,),
+        const SizedBox(height: 40,),
         CustomTextField(hintText: "Habit Name", controller: habitNameController),
-        SizedBox(height: 70,),
-        Text("Set Periodicity",style: TextStyle(
+        const SizedBox(height: 70,),
+        const Text("Set Periodicity",style: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold
         ),),
-        SizedBox(height: 10,),
-        CustomPeriodicitySelector(),
-        SizedBox(height: 30,),
-        Text("When should we remind you?",style:TextStyle(
+        const SizedBox(height: 10,),
+        const CustomPeriodicitySelector(),
+        const SizedBox(height: 30,),
+        const Text("When should we remind you?",style:TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold
         ) ,),
-        SizedBox(height: 20,),
-        NewHabitTimeReminder(),
-        SizedBox(height: 20,),
+        const SizedBox(height: 20,),
+        const NewHabitTimeReminder(),
+        const SizedBox(height: 20,),
 
       ],
     );

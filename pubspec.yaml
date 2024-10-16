@@ -52,6 +52,11 @@ dependencies:
   fl_chart: ^0.69.0
   date_picker_timeline: ^1.2.1
   day_picker: 2.3.0
+  flutter_local_notifications: ^17.2.3
+  permission_handler: ^11.3.1
+  timezone: ^0.9.4
+  flutter_timezone: ^3.0.1
+  workmanager: ^0.5.2
 
   intl: any
 dev_dependencies:
@@ -66,7 +71,7 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
 flutter_launcher_icons:
-  android: true
+  android: "launcher_icon"
   image_path: "assets/images/app_icon.png"
 
 # For information on the generic Dart part of this file, see the

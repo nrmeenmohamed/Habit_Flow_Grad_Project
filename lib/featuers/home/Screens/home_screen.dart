@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/widgets/custom_app_bar.dart';
@@ -10,9 +9,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       appBar: CustomAppBar(),
-      body: const Padding(
+      body: Padding(
         padding: EdgeInsets.all(8.0),
         child: HomeScreenWidget(),
 
