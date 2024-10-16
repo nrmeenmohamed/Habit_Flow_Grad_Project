@@ -10,10 +10,10 @@ import '../../components/slider.dart';
 class BodyOnboarding3Screen extends StatelessWidget {
   const BodyOnboarding3Screen({super.key});
 
-  final List<Map<String, String>> timeData = const [
-    {'time': '6:00', 'period': 'AM', 'label': 'Morning'},
-    {'time': '12:00', 'period': 'PM', 'label': 'Noon'},
-    {'time': '6:00', 'period': 'PM', 'label': 'Evening'},
+  final List<Map<String, dynamic>> timeData = const [
+    {'time': '6:00', 'period': 'AM', 'label': 'Morning', 'hour': 6, 'id': 0},
+    {'time': '12:00', 'period': 'PM', 'label': 'Noon', 'hour': 12, 'id': 1},
+    {'time': '6:00', 'period': 'PM', 'label': 'Evening', 'hour': 18, 'id': 2},
   ];
 
   @override
