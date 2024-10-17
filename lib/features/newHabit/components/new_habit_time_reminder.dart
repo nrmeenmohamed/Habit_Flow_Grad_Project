@@ -6,10 +6,10 @@ class NewHabitTimeReminder extends StatefulWidget {
   const NewHabitTimeReminder({super.key});
 
   @override
-  _NewHabitTimeReminderState createState() => _NewHabitTimeReminderState();
+  NewHabitTimeReminderState createState() => NewHabitTimeReminderState();
 }
 
-class _NewHabitTimeReminderState extends State<NewHabitTimeReminder> {
+class NewHabitTimeReminderState extends State<NewHabitTimeReminder> {
   String selectedTime = "Morning";
 
   void selectTime(String time) {

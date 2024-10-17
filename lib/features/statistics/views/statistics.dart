@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/widgets/custom_bottom_nav_bar.dart';
-import '../components/habit_chart_componenet.dart';
-import '../components/progress_top_3_habits.dart';
-import '../components/time_periodic_selector.dart';
+import '../../progress/components/habit_chart_componenet.dart';
+import '../../progress/components/progress_top_3_habits.dart';
+import 'components/custom_drop_down_menu.dart';
 
 class Statistics extends StatefulWidget {
   const Statistics({super.key});

@@ -6,10 +6,10 @@ class ChooseTimeSelector extends StatefulWidget {
   const ChooseTimeSelector({super.key});
 
   @override
-  _ChooseTimeSelectorState createState() => _ChooseTimeSelectorState();
+  ChooseTimeSelectorState createState() => ChooseTimeSelectorState();
 }
 
-class _ChooseTimeSelectorState extends State<ChooseTimeSelector> {
+class ChooseTimeSelectorState extends State<ChooseTimeSelector> {
   bool _isSelected = false;
 
   @override

@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:habitflow/core/managers/color_manager.dart';
 
-import '../../../core/managers/style_manager.dart';
+import '../../../../core/managers/style_manager.dart';
+
 
 const List<String> list = <String>[
   'option 1',
@@ -26,7 +27,7 @@ class _CustomDropdownMenu extends State<CustomDropdownMenu> {
       width: 200.w,
       menuStyle: const MenuStyle(
           backgroundColor:
-              WidgetStatePropertyAll<Color>(ColorManager.secondaryColor)),
+          WidgetStatePropertyAll<Color>(ColorManager.secondaryColor)),
       textStyle: StyleManager.mediumText(color: Colors.white),
       initialSelection: list.first,
       onSelected: (String? value) {
@@ -40,7 +41,7 @@ class _CustomDropdownMenu extends State<CustomDropdownMenu> {
             label: value,
             style: const ButtonStyle(
                 foregroundColor:
-                    WidgetStatePropertyAll<Color>(Colors.white)));
+                WidgetStatePropertyAll<Color>(Colors.white)));
       }).toList(),
     );
   }

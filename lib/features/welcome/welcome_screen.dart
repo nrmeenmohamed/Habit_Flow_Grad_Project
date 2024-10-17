@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:habitflow/featuers/onboardingScreen/components/onboarding_text.dart';
+
+import 'views/components/onboarding_text.dart';
+
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
 
@@ -11,7 +13,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: OnboardingText(),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          OnboardingText(), // الآن فقط الزر الأخضر في OnboardingText
+        ],
+      ),
     );
   }
 }

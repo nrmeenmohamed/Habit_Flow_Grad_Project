@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../managers/color_manager.dart';
-import '../managers/size_manager.dart';
-import '../managers/style_manager.dart';
+import '../../core/managers/color_manager.dart';
+import '../../core/managers/size_manager.dart';
+import '../../core/managers/style_manager.dart';
+
+
 
 class CustomPrimaryElevatedBtn extends StatelessWidget {
   final void Function() onPressed;
